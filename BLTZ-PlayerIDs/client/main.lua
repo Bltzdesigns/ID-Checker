@@ -34,8 +34,6 @@ Citizen.CreateThread(function()
                         end
                     end
                 end
-                
-                -- Show own ID above player's head
                 local ownServerId = GetPlayerServerId(PlayerId())
                 DrawText3D(coords.x, coords.y, coords.z + 1.0, tostring(ownServerId))
             end
@@ -63,3 +61,4 @@ function DrawText3D(x, y, z, text)
         DrawText(_x, _y)
     end
 end
+
